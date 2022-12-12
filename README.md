@@ -34,13 +34,13 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-[Guilherme Deretti](https://github.com/GuilhermeDeretti)
+[Victor Biscio](https://github.com/reinkaoss)
 
 ## License
 
 MIT License
 
-Copyright (c) [2022] [Victor Biscio]
+Copyright (c) [2022] [Guilherme Deretti]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
