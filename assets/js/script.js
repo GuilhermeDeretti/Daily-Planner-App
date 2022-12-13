@@ -74,16 +74,3 @@ function init() {
     }
 });
 }
-
-/*
-<div class="row " id="14">
-  <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 timestamp">
-    14PM
-  </div>
-  <div class="col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10 timeblock">
-    <textarea name="" id="input6" cols="25" rows="1"></textarea>
-  </div>
-  <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
-    <button class="saveBtn"><i class="fas fa-save fa-3x"></i></button>
-  </div>
-</div>*/

@@ -1,46 +1,38 @@
-# <Daily-Planner-App>
+# Daily-Planner-App
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I desired a method to schedule my daily assigned duties, so I built the Daily Planner app.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This programme allows the user to save and edit tasks as text for each working hour of the day. Furthermore, the hours will be color-coded according to the current time, allowing the user to simply determine which task should be done at that time.
 
-## Table of Contents (Optional)
+My colleague and I decided to start doing it together so we could do some planning and pseudo code together before we started coding, once we started coding, we noticed we needed to keep our files synced due to the fact that we each work on our own computer; after some research, we discovered we could grant access to one's repository, and from there it flows.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+We eventually agreed to finish it separately, so after some more searching, we discovered the possibility of forking a branch, so I could have my version and he could continue without impacting each other's repo files.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+We concentrated on JQuerry and momentum.js practicing, as well as localstorage html, css, and javascrypt.
+The most intriguing aspect of this project was experimenting with github functionality when accessing other people's repositories and forking them.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+N/A.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+* A the top of the screen you'll see the actual day.
+* Following on each row for each hour you'll have a editable text area so you can add tasks for that time in the day. When clicked the big blue button on the right side will grant that you save this row's information and can have it back in case you close the app.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![alt text](assets/images/screen.png)
 
 ## Credits
 
-[Guilherme Deretti](https://github.com/GuilhermeDeretti)
+[Victor Biscio](https://github.com/reinkaoss)
 
 ## License
 
 MIT License
 
-Copyright (c) [2022] [Victor Biscio]
+Copyright (c) [2022] [Guilherme Deretti]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -64,11 +56,6 @@ SOFTWARE.
 
 ![jQuery](https://img.shields.io/badge/jQuery-v.01-green)
 
-## Features
-
-If your project has a lot of features, list them here.
-
-
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Deployed Application: https://guilhermederetti.github.io/Daily-Planner-App/
