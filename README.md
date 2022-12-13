@@ -11,7 +11,7 @@ My colleague and I decided to start doing it together so we could do some planni
 We eventually agreed to finish it separately, so after some more searching, we discovered the possibility of forking a branch, so I could have my version and he could continue without impacting each other's repo files.
 
 We concentrated on JQuerry and momentum.js practicing, as well as localstorage html, css, and javascrypt.
-The most intriguing aspect of this project was experimenting with github functionality when accessing other people's repositories and forking them.
+The most intriguing aspect of this project was experimenting with github when accessing other people's repositories and the fork functionality.
 
 ## Installation
 
