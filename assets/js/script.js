@@ -44,47 +44,66 @@ function saveValue(){
     }, 1000);
   }
 
-
-
-
-
-arrayOfHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-
-
 function init() {
-  arrayOfHours.forEach(function(el) {
-  var rowEl = $('#' + el);
-  if(el == today.hour()){
-    rowEl.children().eq(1).addClass('present'); 
-  } else if(el < today.hour()){
-    rowEl.children().eq(1).addClass('past');
-  } else if(el > today.hour()){
-    rowEl.children().eq(1).addClass('future');
-  }
+  var rootEl = $('.container');
+  // <p id="saveMessage"></p>
+  var successMsg = $('<p>');
+  successMsg.attr('id', 'saveMessage');
+  rootEl.append(successMsg);
+
+  arrayOfHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];  
+  arrayOfHours.forEach(function(hour) {
+    //create the base row structure
+    // <div class="row" id="X"> where X is the hour
+    var rowEl = $('<div class="row" id="' + hour + '">');
+    rootEl.append(rowEl);
+    //create the hour area
+    var timeEl = $('<div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 timestamp">' + hour + amPm(hour) + '</div>')
+
+    /*could be done diferently but just to practice the navigation truout the DOM in Jquerry 
+    We add a class to change the row collor based on the hour */
+    if(hour == today.hour()){
+      rowEl.children().eq(1).addClass('present'); 
+    } else if(hour < today.hour()){
+      rowEl.children().eq(1).addClass('past');
+    } else if(hour > today.hour()){
+      rowEl.children().eq(1).addClass('future');
+    }
+    function amPm(hour){
+      if(hour < 11){return "AM"
+      } else return "PM";
+    }
 });
 }
 
 init();
 
+/*
+<div class="row " id="14">
+  <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1 timestamp">
+    14PM
+  </div>
+  <div class="col-8 col-sm-8 col-md-8 col-lg-10 col-xl-10 timeblock">
+    <textarea name="" id="input6" cols="25" rows="1"></textarea>
+  </div>
+  <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+    <button class="saveBtn"><i class="fas fa-save fa-3x"></i></button>
+  </div>
+</div>
 
+*/
+// Create Timeslots
+// create array with the hours
+// loop the array of hours to create the rows
+      
+//   create TAG for row/hour/input/button 
 
+//   give class to row/hour/input/button 
 
+//   create a dataset to keep the hour in the (row)
 
+//   style timeslots based on the hour comparing to "today.hour()"
 
+//     append all tags
 
-  ///Create Timeslots
-  //create array with the hours
-  //loop the array of hours to create the rows
-        
-    //create TAG for row/hour/input/button 
-
-    //give class to row/hour/input/button 
-
-    //create a dataset to keep the hour in the (row)
-
-    //style timeslots based on the hour comparing to "today.hour()"
-
-  
-      //append all tags
-  
-    // add event listener to add local storage when the save button is clicked in specific timeblock.(Data key "time")
+//   add event listener to add local storage when the save button is clicked in specific timeblock.(Data key "time")
